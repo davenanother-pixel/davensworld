@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Projects/Sites </title>
+    <title>My Projects/Sites</title>
 
     <!-- =====================
          GLOBAL STYLES
@@ -185,21 +185,50 @@
 
     <!-- =====================
          PROJECTS
-         DUPLICATE .project BLOCKS
          ===================== -->
     <section class="grid">
 
-        <!-- PROJECT TEMPLATE START -->
-        <div class="project" data-link="www.davens.world/web-shooter">
-            <h3>Web s=Shooter</h3>
-            <p>
-                Web Shooter
-            </p>
-            <span class="tag">Category / Tech</span>
+        <!-- Card 1 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>Web Shooter</h3>
+            <p>Fast-paced browser arena shooter.</p>
+            <span class="tag">Game / JS</span>
         </div>
-        <!-- PROJECT TEMPLATE END -->
 
-        <!-- COPY ABOVE BLOCK FOR MORE PROJECTS -->
+        <!-- Card 2 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>Polyglot Arena</h3>
+            <p>Multi-language real-time multiplayer demo.</p>
+            <span class="tag">Demo / Many</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>Pixel Universe</h3>
+            <p>32×32 pixel survival sandbox.</p>
+            <span class="tag">Game / TS</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>FireURL Engine</h3>
+            <p>Experimental search interface.</p>
+            <span class="tag">Tool / Go</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>PyVerse Studio</h3>
+            <p>Roblox-like game creator in Python.</p>
+            <span class="tag">Studio / Py</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="project" data-link="https://www.davens.world/web-shooter">
+            <h3>CodeCollab</h3>
+            <p>Real-time collaborative editor.</p>
+            <span class="tag">Editor / Next</span>
+        </div>
 
     </section>
 
@@ -217,9 +246,7 @@
         document.querySelectorAll(".project").forEach(card => {
             card.addEventListener("click", () => {
                 const link = card.getAttribute("data-link");
-                if (link && link !== "www.davens.world/web-shooter") {
-                    window.location.href = link;
-                }
+                if (link) window.location.href = link;
             });
         });
     </script>
