@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Your Projects</title>
+    <title>My Projects/Sites </title>
 
     <!-- =====================
          GLOBAL STYLES
@@ -177,10 +177,9 @@
          EDIT THIS
          ===================== -->
     <header>
-        <h1>Your Projects</h1>
+        <h1>My Projects</h1>
         <p>
-            A collection of projects. Click any project to open it.
-            Replace this text with your own description.
+            A collection of my projects. Click any project to go to view it.
         </p>
     </header>
 
@@ -194,8 +193,7 @@
         <div class="project" data-link="PUT_PROJECT_URL_HERE">
             <h3>Project Title</h3>
             <p>
-                Short description of what this project does.
-                Keep it concise and clear.
+                Web Shooter
             </p>
             <span class="tag">Category / Tech</span>
         </div>
@@ -219,7 +217,7 @@
         document.querySelectorAll(".project").forEach(card => {
             card.addEventListener("click", () => {
                 const link = card.getAttribute("data-link");
-                if (link && link !== "PUT_PROJECT_URL_HERE") {
+                if (link && link !== "www.davens.world/web-shooter") {
                     window.location.href = link;
                 }
             });
