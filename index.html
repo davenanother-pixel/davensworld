@@ -1,255 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Projects/Sites</title>
+<!-- =====================
+     PROJECTS  (real URL shown)
+     ===================== -->
+<section class="grid">
 
-    <!-- =====================
-         GLOBAL STYLES
-         ===================== -->
-    <style>
-        :root {
-            --bg: #0b0f1a;
-            --card: #12182a;
-            --accent: #4f7cff;
-            --text: #e8ebf3;
-            --muted: #9aa3c7;
-            --radius: 16px;
-        }
+    <!-- Card 1 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>Web Shooter</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Game / JS</span>
+    </div>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
-        }
+    <!-- Card 2 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>Polyglot Arena</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Demo / Many</span>
+    </div>
 
-        body {
-            background: radial-gradient(1200px 600px at top, #121735, var(--bg));
-            color: var(--text);
-            min-height: 100vh;
-            padding: 40px;
-        }
+    <!-- Card 3 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>Pixel Universe</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Game / TS</span>
+    </div>
 
-        /* =====================
-           HEADER
-           ===================== */
-        header {
-            max-width: 1200px;
-            margin: 0 auto 40px;
-            animation: fadeDown 0.8s ease forwards;
-        }
+    <!-- Card 4 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>FireURL Engine</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Tool / Go</span>
+    </div>
 
-        header h1 {
-            font-size: 2.8rem;
-            letter-spacing: -0.02em;
-        }
+    <!-- Card 5 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>PyVerse Studio</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Studio / Py</span>
+    </div>
 
-        header p {
-            color: var(--muted);
-            margin-top: 8px;
-            max-width: 600px;
-        }
+    <!-- Card 6 -->
+    <div class="project" data-link="https://www.davens.world/web-shooter">
+        <h3>CodeCollab</h3>
+        <p>https://www.davens.world/web-shooter</p>
+        <span class="tag">Editor / Next</span>
+    </div>
 
-        /* =====================
-           PROJECT GRID
-           ===================== */
-        .grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
-        /* =====================
-           PROJECT CARD
-           ===================== */
-        .project {
-            background: linear-gradient(180deg, #161d36, var(--card));
-            border-radius: var(--radius);
-            padding: 24px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
-            animation: fadeUp 0.8s ease forwards;
-        }
-
-        .project::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                120deg,
-                transparent 30%,
-                rgba(79,124,255,0.15),
-                transparent 70%
-            );
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-        }
-
-        .project:hover::before {
-            opacity: 1;
-        }
-
-        .project h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            font-size: 0.95rem;
-            color: var(--muted);
-            line-height: 1.5;
-        }
-
-        .project .tag {
-            display: inline-block;
-            margin-top: 16px;
-            font-size: 0.75rem;
-            padding: 6px 10px;
-            border-radius: 999px;
-            background: rgba(79,124,255,0.15);
-            color: var(--accent);
-        }
-
-        /* =====================
-           FOOTER
-           ===================== */
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            color: var(--muted);
-            font-size: 0.85rem;
-        }
-
-        /* =====================
-           ANIMATIONS
-           ===================== */
-        @keyframes fadeDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* =====================
-           RESPONSIVE
-           ===================== */
-        @media (max-width: 600px) {
-            body {
-                padding: 24px;
-            }
-
-            header h1 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- =====================
-         HEADER CONTENT
-         EDIT THIS
-         ===================== -->
-    <header>
-        <h1>My Projects</h1>
-        <p>
-            A collection of my projects. Click any project to go to view it.
-        </p>
-    </header>
-
-    <!-- =====================
-         PROJECTS
-         ===================== -->
-    <section class="grid">
-
-        <!-- Card 1 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>Web Shooter</h3>
-            <p>Fast-paced browser arena shooter.</p>
-            <span class="tag">Game / JS</span>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>Polyglot Arena</h3>
-            <p>Multi-language real-time multiplayer demo.</p>
-            <span class="tag">Demo / Many</span>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>Pixel Universe</h3>
-            <p>32×32 pixel survival sandbox.</p>
-            <span class="tag">Game / TS</span>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>FireURL Engine</h3>
-            <p>Experimental search interface.</p>
-            <span class="tag">Tool / Go</span>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>PyVerse Studio</h3>
-            <p>Roblox-like game creator in Python.</p>
-            <span class="tag">Studio / Py</span>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="project" data-link="https://www.davens.world/web-shooter">
-            <h3>CodeCollab</h3>
-            <p>Real-time collaborative editor.</p>
-            <span class="tag">Editor / Next</span>
-        </div>
-
-    </section>
-
-    <!-- =====================
-         FOOTER
-         ===================== -->
-    <footer>
-        © Your Name — All projects listed here are yours.
-    </footer>
-
-    <!-- =====================
-         INTERACTION SCRIPT
-         ===================== -->
-    <script>
-        document.querySelectorAll(".project").forEach(card => {
-            card.addEventListener("click", () => {
-                const link = card.getAttribute("data-link");
-                if (link) window.location.href = link;
-            });
-        });
-    </script>
-
-</body>
-</html>
+</section>
